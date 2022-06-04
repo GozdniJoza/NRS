@@ -1,7 +1,7 @@
-const nav = document.getElementById("nav-bar");
 
-window.onscroll = function() {navbar()};
-//window.onscroll = function() {opacity()};
+window.addEventListener("scroll", opacity);
+window.addEventListener("scroll", navbar)
+
 
 function navbar()
 {
@@ -22,12 +22,13 @@ function navbar()
 function opacity()
 {
     const box = document.getElementById("parent");
-    if (document.documentElement.scrollTop > 80) {
+    if (document.documentElement.scrollTop < 400) {
         box.style.opacity = "0";
-        box.style.transition = "1s";
+        box.style.transform = "translate(0px, 50px)"; 
       }
-    if (document.documentElement.scrollTop < 80) {
-      }
+    if (document.documentElement.scrollTop > 400) {
         box.style.opacity = "1";
-        box.style.transition = "1s";
+        box.style.transform = "translate(0px, -50px)"; 
+    }
+        
 }

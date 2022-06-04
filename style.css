@@ -70,6 +70,7 @@ main{
     font-family: 'Ubuntu', sans-serif;
     border-bottom: 2px solid rgb(60, 158, 250);
     margin: 0%;
+    box-shadow: 0px 0px 40px 30px rgb(23, 50, 87);
 }
 .title{
     margin: 50px 0px 0px 40px;
@@ -121,7 +122,7 @@ boxes
 
 #parent h2{
     margin: 40px 0px 0px 30px;
-    font-size: 2em;
+    font-size: 2.4em;
     font-family: 'Lato', sans-serif;
 }
 #parent p{
@@ -130,6 +131,19 @@ boxes
     border-radius: 5px 0px 0px 5px;
     background-color: rgba(18, 26, 37, 0.377);
     font-size: 1.3em;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.6em;
+    margin: 70px 0px 0px 70px;
+    padding: 2px 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 3px;
+}
+.link:hover{
+    color: aqua;
 }
 #parent {
     margin: 150px 0px 0px 0px;
@@ -140,6 +154,8 @@ boxes
     grid-row-gap: 0px;
     box-shadow: 0px 0px 30px 50px rgba(0, 0, 0, 0.623);
     color: aliceblue;
+    transition: 1500ms;
+    border-radius: 5px;
 }
 
 
@@ -157,6 +173,7 @@ boxes
     background-repeat: no-repeat;
     height: 400px;
     transition: 500ms;
+    border-radius: 5px 0 0 0;
 }
 .div2{
     background-image: url(slike/box3.jpg);
@@ -164,12 +181,14 @@ boxes
     background-position-x: 60%;
     background-repeat: no-repeat;
     transition: 500ms;
+    border-radius: 0 5px 0 0;
 }
 .div3{
     background-image: url(slike/box2.jpg);
     background-position-x: left;
     background-position-y: 40%;
     transition: 500ms;
+    border-radius: 0 0 0 5px;
 }
 .div4{
     background-image: url(slike/box1.jpg);
@@ -177,11 +196,13 @@ boxes
     background-position-y: 10%;
     background-size: 800px 800px;
     transition: 500ms;
+    border-radius: 0 0 5px 0px;
 }
 
 .div1:hover{
     background-position-y: 80%;
     transition: 500ms;
+    opacity: 0.9;
 }
 .div2:hover{
     background-position-y: 80%;
@@ -202,7 +223,7 @@ boxes
     color: rgba(60,158,250,1);
     font-size: 1.5em;
     text-align: center;
-    margin: 100px 0 0 0;
+    margin: 250px 0 0 0;
 
 }
 .end a{
@@ -210,6 +231,11 @@ boxes
     padding: 0px 100px;
     color: rgba(60,158,250,1);
     text-decoration: none;
+    transition: 200ms;
+}
+.end a:hover{
+    color: rgb(176, 204, 243);
+    transition: 200ms;
 }
 
 
