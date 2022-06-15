@@ -68,46 +68,28 @@ main h1{
     padding: 10px;
     color: aliceblue;
 }
-
-.article1 , .article2, .article3, .article4, .article5{
-    border-bottom: 3px solid rgb(60, 158, 250);
-    color: rgb(60, 158, 250);
-    padding: 10px 30px 35px 30px;
-
+#main-section{
+    background-image: url(slike/article1.jpg);
 }
-.article-wrap{
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
+.title{
+    margin: 50px 0px 0px 60px;
+    display: inline-block;
+    text-shadow: #333 30px;
 }
-.flex-cont{
+.title h1{
+    font-size: 500%;
+}
+.title h2{
+    font-size: 200%;
+}
+.title ul{
+    list-style-type: none;
+}
+.flex{
     display: flex;
-
-}
-.article-wrap a{
-    font-size: 1.4em;
-    font-family: Open Sans ,sans-serif;
-    padding: 5px;
-    margin: 20px 0px 0 20px;
-}
-.article-wrap h2{
-    font-size: 2.5em;
-    font-family: 'Bebas Neue', cursive;
 }
 
 
-
-
-
-.left{
-    display: flex;
-    border: none;
-}
-.right{
-    display: flex;
-    border: none;
-
-}
 
 footer{
     height: 400px;
